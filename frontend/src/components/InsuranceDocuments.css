@@ -1,0 +1,36 @@
+/* InsuranceDocuments.css */
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.document-card {
+  transition: transform 0.3s ease;
+  border: 2px solid #dee2e6;
+  height: 100%;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.document-card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* تحسينات للعرض */
+.document-card .card-title {
+  color: #2c3e50;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.document-card .card-text {
+  color: #6c757d;
+  font-size: 14px;
+  min-height: 40px;
+}

@@ -1,0 +1,96 @@
+/* src/components/health/HealthPremiumCalculator.css */
+.health-premium-calculator {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.calculation-result {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.summary-card {
+  transition: transform 0.2s;
+  border: 1px solid #e3e6f0;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tips-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tips-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.tips-list li:last-child {
+  border-bottom: none;
+}
+
+.tips-list li::before {
+  content: "✓";
+  color: #1cc88a;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.steps-timeline {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.steps-timeline::before {
+  content: '';
+  position: absolute;
+  right: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #4e73df;
+}
+
+.step-item {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.step-item::before {
+  content: '';
+  position: absolute;
+  right: -0.5rem;
+  top: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #4e73df;
+  z-index: 1;
+}
+
+.info-list .info-item {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.info-list .info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* تصميم متجاوب */
+@media (max-width: 992px) {
+  .summary-card {
+    margin-bottom: 1rem;
+  }
+}

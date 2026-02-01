@@ -1,0 +1,330 @@
+/* HealthInsuranceTypeSelector.css */
+.insurance-type-selector {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.selector-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.selector-header h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-compare, .btn-pdf {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-compare {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-compare:hover {
+  background-color: #2980b9;
+}
+
+.btn-pdf {
+  background-color: #27ae60;
+  color: white;
+}
+
+.btn-pdf:hover {
+  background-color: #219653;
+}
+
+/* جدول المقارنة */
+.comparison-table {
+  margin: 30px 0;
+  overflow-x: auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.comparison-table th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.comparison-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* بطاقات الأنواع */
+.type-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.type-card {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+}
+
+.type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.type-card.selected {
+  border-width: 3px;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.card-header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.card-icon {
+  font-size: 32px;
+}
+
+.card-header h3 {
+  flex: 1;
+  margin: 0;
+  font-size: 20px;
+}
+
+.price-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-description {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.features-section,
+.coinsurance-section,
+.requirements-section {
+  margin-bottom: 20px;
+}
+
+.features-section h4,
+.coinsurance-section h4,
+.requirements-section h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.features-section ul,
+.requirements-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-section li,
+.requirements-section li {
+  padding: 6px 0;
+  padding-right: 20px;
+  position: relative;
+  font-size: 14px;
+  color: #444;
+}
+
+.features-section li:before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #27ae60;
+}
+
+.requirements-section li:before {
+  content: "📌";
+  position: absolute;
+  right: 0;
+  color: #f39c12;
+}
+
+.coinsurance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.coinsurance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.coinsurance-item .label {
+  color: #666;
+  font-size: 13px;
+}
+
+.coinsurance-item .value {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.card-footer {
+  padding: 20px 25px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background: #fafafa;
+}
+
+.select-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.select-btn:hover {
+  transform: scale(1.02);
+}
+
+/* توجيهات الاختيار */
+.selection-guidance {
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.selection-guidance h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.guidance-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.guidance-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 25px;
+  color: #333;
+}
+
+.guidance-card h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.guidance-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.guidance-card li {
+  padding: 8px 0;
+  padding-right: 25px;
+  position: relative;
+  font-size: 14px;
+}
+
+.guidance-card li:before {
+  content: "→";
+  position: absolute;
+  right: 0;
+  color: #667eea;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .type-cards-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .coinsurance-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .header-actions {
+    flex-direction: column;
+  }
+  
+  .guidance-cards {
+    grid-template-columns: 1fr;
+  }
+}

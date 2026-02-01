@@ -1,0 +1,991 @@
+/* التأمين الصحي للشركات */
+.health-insurance-dashboard {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.dashboard-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.upload-section, .reports-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.upload-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px dashed #3498db;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.upload-btn, .template-btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: all 0.3s;
+}
+
+.upload-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+}
+
+.template-btn {
+    background: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+}
+
+.upload-btn:hover {
+    background: #2980b9;
+}
+
+.template-btn:hover {
+    background: #f8f9fa;
+}
+
+.upload-notes {
+    margin-top: 2rem;
+    text-align: right;
+    background: #fff3cd;
+    padding: 1rem;
+    border-radius: 6px;
+    border-right: 4px solid #ffc107;
+}
+
+.upload-notes h4 {
+    color: #856404;
+    margin-bottom: 0.5rem;
+}
+
+.upload-notes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.upload-notes li {
+    padding: 5px 0;
+    color: #856404;
+    font-size: 14px;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.report-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+}
+
+.report-card h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.report-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.report-btn {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.report-btn:hover:not(:disabled) {
+    background: #219653;
+}
+
+.report-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.upload-status.success {
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    color: #155724;
+}
+
+.analysis-summary, .recommendations {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 6px;
+}
+
+.analysis-summary h5, .recommendations h5 {
+    color: #155724;
+    margin-bottom: 0.5rem;
+}
+
+.recommendations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations li {
+    padding: 5px 0;
+    padding-right: 20px;
+    position: relative;
+}
+
+.recommendations li:before {
+    content: "•";
+    position: absolute;
+    right: 0;
+    color: #27ae60;
+    font-size: 20px;
+}
+
+/* شركاتي - تصميم جديد */
+.companies-stats {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companies-stats h3 {
+  margin: 0;
+  color: white;
+}
+
+.total-employees {
+  background: rgba(255,255,255,0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 25px;
+}
+
+.company-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.company-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4caf50, #2196f3, #ff9800, #9c27b0);
+}
+
+.company-card-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.company-icon {
+  font-size: 36px;
+  margin-right: 15px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 10px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-info h3 {
+  margin: 0 0 8px 0;
+  color: #212529;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.company-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.employee-count {
+  background: #d4edda;
+  color: #155724;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #c3e6cb;
+}
+
+.company-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.detail-label {
+  color: #868e96;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #212529;
+  font-size: 15px;
+}
+
+.detail-value.email {
+  font-size: 14px;
+  color: #007bff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.detail-value.phone {
+  font-size: 14px;
+  color: #495057;
+  direction: ltr;
+}
+
+.company-actions {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #e9ecef;
+  padding-top: 20px;
+}
+
+.btn-calculate, .btn-details {
+  flex: 1;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-calculate {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.btn-details {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.btn-calculate:hover, .btn-details:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.company-created {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #adb5bd;
+  border-top: 1px dashed #e9ecef;
+  padding-top: 10px;
+}
+
+/* ملخص الشركات */
+.companies-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.companies-summary h4 {
+  margin-top: 0;
+  color: #495057;
+  margin-bottom: 15px;
+}
+
+.summary-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.summary-item {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.summary-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212529;
+  margin: 5px 0;
+}
+
+.sectors-summary {
+  flex: 2;
+  min-width: 200px;
+}
+
+.sectors-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sector-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #e9ecef;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.more-tag {
+  background: #e9ecef;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* حاسبة الأقساط */
+.calculator-mode-switcher {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.mode-btn {
+  padding: 12px 25px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.mode-btn:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+}
+
+.mode-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.calculator-empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #dee2e6;
+  margin: 20px 0;
+}
+
+.company-selector {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.company-dropdown {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+  cursor: pointer;
+}
+
+.selected-company-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  border: 2px solid #e9ecef;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.company-info-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-change-company {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-change-company:hover {
+  background: #5a6268;
+}
+
+/* تبويب أنواع التأمين */
+.insurance-cta {
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6491 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.insurance-cta h3 {
+  margin: 0 0 15px 0;
+  color: white;
+  font-size: 24px;
+}
+
+.insurance-cta p {
+  margin: 0 0 25px 0;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* تبويبات */
+.tabs {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 30px;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.08); */
+  /* border: 1px solid #e9ecef; */
+  /* flex-wrap: wrap; */
+  gap: 5px;
+}
+
+.tab {
+  flex: 1;
+  min-width: 140px;
+  padding: 18px 15px;
+  border: none;
+  background: transparent;
+  color: #495057;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .tab:hover {
+  background: #f8f9fa;
+  color: #2c3e50;
+  transform: translateY(-2px);
+} */
+
+/* .tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  font-weight: 600;
+} */
+
+.tab.active::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: white;
+  border-radius: 0 0 8px 8px;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 992px) {
+  .tabs {
+    flex-direction: row;
+    gap: 5px;
+  }
+  
+  .tab {
+    width: 100%;
+    min-width: auto;
+    justify-content: flex-start;
+    padding: 15px 20px;
+  }
+  
+  .companies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .summary-grid {
+    flex-direction: column;
+  }
+  
+  .company-info-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .calculator-mode-switcher {
+    flex-direction: column;
+  }
+}
+
+/* في HealthInsurance.css - إضافة */
+.company-actions-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-refresh-employees {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(102, 126, 234, 0.2);
+}
+
+.btn-refresh-employees:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-refresh-employees:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner-small {
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+.employees-status-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #dee2e6;
+}
+
+.status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.status-header h4 {
+  margin: 0;
+  color: #495057;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-badge.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.status-label {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.status-value {
+  color: #495057;
+  font-weight: bold;
+}
+
+.employees-stats-card {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  border: 2px solid #d7ccc8;
+}
+
+.employees-stats-card h4 {
+  margin: 0 0 20px 0;
+  color: #5d4037;
+  border-bottom: 2px solid #d7ccc8;
+  padding-bottom: 10px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #795548;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5d4037;
+}
+
+.stats-source {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.source-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.source-badge.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.source-badge.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* في HealthInsurance.css */
+.employees-control-panel {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #a8b8d0;
+}
+
+.employees-control-panel h4 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-extract, .btn-reload, .btn-clear {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-extract {
+  background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+  color: white;
+}
+
+.btn-extract:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.btn-extract:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-reload {
+  background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%);
+  color: white;
+}
+
+.btn-reload:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.btn-clear {
+  background: linear-gradient(135deg, #f44336 0%, #c62828 100%);
+  color: white;
+}
+
+.btn-clear:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+}
+
+.data-status {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.status-label {
+  color: #495057;
+  font-weight: 500;
+}
+
+.status-value {
+  color: #212529;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.employees-sample {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.employees-sample h5 {
+  margin: 0 0 15px 0;
+  color: #343a40;
+  text-align: center;
+}
+
+.sample-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sample-table th {
+  background: #6c757d;
+  color: white;
+  padding: 12px;
+  text-align: right;
+}
+
+.sample-table td {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  text-align: right;
+}
+
+.sample-table tr:hover {
+  background: #f8f9fa;
+}
+
+.gender-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gender-badge.male {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.gender-badge.female {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.sample-note {
+  text-align: center;
+  padding: 10px;
+  color: #6c757d;
+  font-style: italic;
+  border-top: 1px dashed #dee2e6;
+  margin-top: 10px;
+}

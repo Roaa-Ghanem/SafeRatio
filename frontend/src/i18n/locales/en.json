@@ -1,0 +1,434 @@
+{
+  "vehicleForm": {
+    "title": "Add New Vehicle",
+    "sections": {
+      "basic": "Basic Information",
+      "identification": "Identification",
+      "technical": "Technical Details"
+    },
+    "fields": {
+      "vehicleType": "Vehicle Type",
+      "make": "Make",
+      "model": "Model",
+      "year": "Year",
+      "licensePlate": "License Plate",
+      "vin": "VIN",
+      "fuelType": "Fuel Type",
+      "engineSize": "Engine Size (L)",
+      "currentValue": "Current Value ($)",
+      "annualMileage": "Annual Mileage (km)",
+      "commercial": "This is a commercial vehicle"
+    },
+    "placeholders": {
+      "make": "e.g., Toyota",
+      "model": "e.g., Camry",
+      "licensePlate": "e.g., ABC-123",
+      "vin": "17-character Vehicle Identification Number",
+      "engineSize": "e.g., 1.6",
+      "currentValue": "e.g., 10000",
+      "annualMileage": "e.g., 10000"
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "submit": "Add Vehicle",
+      "submitting": "Adding Vehicle..."
+    },
+    "options": {
+      "vehicleType": {
+        "car": "Car",
+        "suv": "SUV",
+        "truck": "Truck",
+        "motorcycle": "Motorcycle"
+      },
+      "fuelType": {
+        "petrol": "Petrol",
+        "diesel": "Diesel",
+        "electric": "Electric",
+        "hybrid": "Hybrid"
+      }
+    },
+    "errors": {
+      "general": "Failed to add vehicle. Please try again.",
+      "makeRequired": "Make is required",
+      "modelRequired": "Model is required",
+      "yearInvalid": "Please enter a valid year",
+      "licensePlateRequired": "License plate is required",
+      "vinInvalid": "VIN must be at least 10 characters",
+      "valueInvalid": "Please enter a valid value"
+    }
+  },
+  
+  "carInsuranceReport": {
+    "title": "Comprehensive Insurance Report",
+    "description": "Get a complete analysis of your car insurance with personalized recommendations",
+    "features": {
+      "riskAnalysis": "Risk Analysis",
+      "riskDescription": "Risk level assessment based on your vehicle data",
+      "smartRecommendations": "Smart Recommendations",
+      "recommendationsDescription": "Personalized tips to reduce insurance premiums",
+      "comprehensiveComparison": "Comprehensive Comparison",
+      "comparisonDescription": "Comparison between all available insurance plans"
+    },
+    "button": {
+      "generate": "Generate PDF Report",
+      "generating": "Generating Report..."
+    },
+    "content": {
+      "title": "Report Content:",
+      "items": [
+        "Basic Vehicle Information",
+        "Risk Analysis and Assessment",
+        "Insurance Plans Comparison",
+        "Premium Reduction Recommendations",
+        "Traffic Safety Tips",
+        "Claims History Analysis"
+      ]
+    },
+    "errors": {
+      "noVehicle": "Please select a vehicle",
+      "generationFailed": "Failed to generate report. Please try again"
+    }
+  },
+  
+  "confirmEmail": {
+    "title": "Email Verification",
+    "verifying": "Verifying...",
+    "missingParams": "Missing verification parameters.",
+    "success": "Email confirmed successfully.",
+    "failed": "Verification failed.",
+    "return": "You can now return to the site and log in."
+  },
+  
+  "dashboard": {
+    "title": "SafeRatio Dashboard",
+    "welcome": "Welcome, {{username}}!",
+    "logout": "Logout",
+    "portalTitle": "Insurance Management Portal",
+    "portalDescription": "Manage all your insurance policies in one place",
+    "cards": {
+      "carInsurance": "Car Insurance",
+      "carInsuranceDesc": "Manage your vehicle insurance policies",
+      "healthInsurance": "Health Insurance",
+      "healthInsuranceDesc": "Organization health insurance management",
+      "insuranceQuotes": "Insurance Quotes",
+      "insuranceQuotesDesc": "View and manage your insurance quotes",
+      "claims": "Claims",
+      "claimsDesc": "Track and manage insurance claims"
+    },
+    "buttons": {
+      "manage": "Manage",
+      "comingSoon": "Coming Soon"
+    },
+    "stats": {
+      "activePolicies": "Active Policies",
+      "pendingQuotes": "Pending Quotes",
+      "openClaims": "Open Claims",
+      "noPolicies": "No active policies",
+      "noQuotes": "No pending quotes",
+      "noClaims": "No open claims"
+    }
+  },
+  
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "email": "Email",
+    "sendButton": "Send Reset Email",
+    "sent": "If the account exists, a password reset email was sent.",
+    "error": "Failed to send reset email."
+  },
+  
+  "healthInsurance": {
+    "title": "Health Insurance for Establishments",
+    "welcome": "Welcome, {{username}}!",
+    "accountBadge": "Establishment Account",
+    "tabs": {
+      "companies": "My Companies ({{count}})",
+      "quotes": "Insurance Quotes ({{count}})",
+      "policies": "Policies ({{count}})",
+      "insuranceTypes": "Insurance Types",
+      "calculator": "Premium Calculator"
+    },
+    "companies": {
+      "title": "My Companies ({{count}})",
+      "addButton": "+ Add New Company",
+      "stats": {
+        "title": "📊 Companies Statistics",
+        "registered": "You have {{count}} registered companies",
+        "totalEmployees": "{{count}} 👥 Total Employees"
+      },
+      "emptyState": {
+        "icon": "🏢",
+        "title": "No Registered Companies",
+        "description": "Add your first company to start insuring your employees and get customized offers",
+        "button": "+ Add Your First Company"
+      },
+      "companyCard": {
+        "tags": {
+          "location": "📍 {{city}}",
+          "sector": "🏷️ {{sector}}"
+        },
+        "details": {
+          "crNumber": "CR Number",
+          "crNumberPlaceholder": "Not specified",
+          "age": "Company Age",
+          "ageUnit": "years",
+          "email": "Email",
+          "emailPlaceholder": "Not specified",
+          "phone": "Phone",
+          "phonePlaceholder": "Not specified"
+        },
+        "createdAt": "🗓️ Created on {{date}}",
+        "actions": {
+          "calculate": "🧮 Calculate Premium",
+          "details": "📋 View Details",
+          "delete": "🗑️ Delete"
+        }
+      },
+      "summary": {
+        "title": "📈 Companies Summary",
+        "totalCompanies": "Total Companies",
+        "totalEmployees": "Total Employees",
+        "sectorsDistribution": "Sectors Distribution",
+        "more": "+ {{count}} more"
+      }
+    },
+    "calculator": {
+      "title": "🧮 Premium Calculator",
+      "modeSwitcher": {
+        "simple": "📊 Simple Calculator",
+        "advanced": "🚀 Advanced Calculator"
+      },
+      "emptyState": {
+        "icon": "🏢",
+        "title": "Select a Company to Start",
+        "description": "You have {{count}} companies. Select one to calculate premium",
+        "selectPlaceholder": "-- Select Company --",
+        "addButton": "+ Add New Company"
+      },
+      "selectedCompany": {
+        "changeButton": "Change Company",
+        "refreshEmployees": "🔄 Load Employee Data",
+        "refreshLoading": "Loading...",
+        "dataStatus": {
+          "title": "📊 Data Status",
+          "company": "Company:",
+          "id": "ID:",
+          "loadedEmployees": "Loaded Employees:",
+          "source": "Source:",
+          "notLoaded": "Not loaded",
+          "sourceLocal": "Local Storage",
+          "sourceFile": "Uploaded File",
+          "sourceDefault": "Default Data",
+          "calculatedData": "Approved for Calculation:",
+          "realData": "Real data",
+          "clearCache": "🗑️ Clear Local Data"
+        },
+        "employeesStats": {
+          "title": "📈 Loaded Employees Statistics",
+          "total": "Total Count",
+          "males": "Males",
+          "females": "Females",
+          "married": "Married",
+          "totalSalaries": "Total Salaries",
+          "averageSalary": "Average Salary",
+          "sourceBadge": {
+            "excel": "💾 Data Source: Uploaded Excel file ({{count}} records)",
+            "default": "⚠️ Data Source: Default data (for development)"
+          }
+        },
+        "sampleData": {
+          "title": "📋 Employee Data Sample ({{count}} employees):",
+          "headers": ["#", "Name", "Gender", "Age", "Salary", "Status"],
+          "more": "+ {{count}} more employees"
+        }
+      }
+    },
+    "errors": {
+      "sessionExpired": "Session expired. Please log in again.",
+      "loadFailed": "Failed to load data. Please try again.",
+      "noCompanies": "⚠️ No companies for user!",
+      "policyLoadFailed": "❌ Failed to load policy details",
+      "guideDownloadFailed": "❌ Failed to download guide. Please try again.",
+      "certificateFailed": "❌ Cannot create certificate. Please try again.",
+      "quoteAcceptFailed": "❌ Failed to accept quote",
+      "deleteFailed": "Failed to delete company",
+      "noPermission": "❌ You don't have permission to delete this company",
+      "notFound": "❌ Company not found",
+      "cannotDelete": "❌ Cannot delete company",
+      "serverError": "❌ Cannot connect to server",
+      "noCompanySelected": "❌ No company selected",
+      "noCompanyId": "❌ Company ID not found",
+      "noEmployeeData": "❌ No employee data available"
+    },
+    "success": {
+      "policyCreated": "✅ New policy created: {{policyNumber}}",
+      "companyDeleted": "✅ Company \"{{companyName}}\" deleted successfully",
+      "companyHidden": "⚠️ Company \"{{companyName}}\" hidden from list (not deleted from database)",
+      "employeeDataLoaded": "✅ Employee data loaded for {{companyName}}",
+      "localDataLoaded": "✅ Loaded {{count}} employees from local storage",
+      "cacheCleared": "🗑️ Local data cleared",
+      "employeeDataSaved": "✅ Employee data saved successfully!",
+      "quoteAccepted": "✅ Quote accepted successfully!",
+      "insuranceTypeSelected": "✅ Insurance type {{typeId}} selected"
+    }
+  },
+  
+  "healthInsuranceDashboard": {
+    "title": "🏢 Corporate Health Insurance System",
+    "description": "Manage employee insurance and health data analysis",
+    "uploadSection": {
+      "title": "📤 Upload Employee Data",
+      "description": "Upload Excel file containing your employee data",
+      "chooseFile": "Choose Excel File",
+      "uploading": "Uploading...",
+      "downloadTemplate": "Download Template",
+      "notes": {
+        "title": "Important Notes:",
+        "items": [
+          "File must contain these columns: employee_id, full_name, age, gender, department, salary",
+          "You can add optional columns: email, phone, marital_status, dependents, medical_history",
+          "Maximum file size: 10MB"
+        ]
+      }
+    },
+    "reportsSection": {
+      "title": "📋 Reports & Analytics",
+      "excelReport": {
+        "title": "Comprehensive Excel Report",
+        "description": "Detailed report with all employee data and analysis",
+        "button": "Download Excel"
+      },
+      "pdfReport": {
+        "title": "Brief PDF Report",
+        "description": "Summary of analysis and recommendations in PDF format",
+        "button": "Download PDF"
+      },
+      "riskAnalysis": {
+        "title": "Risk Analysis",
+        "description": "Health risk assessment for company using AI",
+        "button": "View Analysis"
+      }
+    },
+    "uploadStatus": {
+      "success": "✅ Upload Successful",
+      "analysis": "Analysis Summary:",
+      "recommendations": "Recommendations:"
+    },
+    "errors": {
+      "invalidFile": "Please upload Excel file with .xlsx or .xls format",
+      "uploadFailed": "Failed to upload file",
+      "reportFailed": "Failed to generate report",
+      "noCompany": "Please select a company"
+    }
+  },
+  
+  "landingPage": {
+    "hero": {
+      "title": "Embrace Tomorrow with Confidence.",
+      "subtitle": "Discover the peace of mind that comes with tailored protection. Our intuitive tool helps you understand your needs, so you can live fully, today and beyond.",
+      "cta": "Start Your Journey to Clarity"
+    },
+    "registrationTypes": {
+      "title": "Choose Your Account Type",
+      "subtitle": "Get started with the right insurance solution for your needs",
+      "individual": {
+        "icon": "👤",
+        "title": "Individual Account",
+        "description": "Perfect for personal insurance needs",
+        "features": ["Car & Vehicle Insurance"],
+        "button": "SignUp as Individual"
+      },
+      "organization": {
+        "icon": "🏢",
+        "title": "Organization Account",
+        "description": "Ideal for businesses and companies",
+        "features": ["Employee Health Plans"],
+        "button": "SignUp as Organization"
+      }
+    },
+    "features": {
+      "title": "A Foundation for Your Future",
+      "precision": {
+        "icon": "insights",
+        "title": "Precision You Can Trust",
+        "description": "Our advanced algorithms consider every nuance of your life, providing an estimate that truly reflects your unique circumstances. No more guesswork, just clear, actionable insights for your financial well-being."
+      },
+      "scenario": {
+        "icon": "📑",
+        "title": "Craft Your Ideal Scenario",
+        "description": "Life is dynamic, and your plans should be too. Save and compare different coverage options, adapting as your dreams and responsibilities evolve. Empowering you to make choices that resonate with your aspirations."
+      },
+      "blueprint": {
+        "icon": "⬇️",
+        "title": "Your Personalized Blueprint",
+        "description": "Receive a beautifully designed, comprehensive report detailing your insurance needs. This personal blueprint is yours to keep, share, and review, ensuring you're always informed and confident in your decisions."
+      }
+    },
+    "process": {
+      "title": "Your Journey, Simplified",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Share Your Story",
+          "description": "Begin by securely providing a few details about your life and financial goals. Our platform is designed to understand your unique aspirations, making the calculation truly personal."
+        },
+        {
+          "number": "2",
+          "title": "Uncover Your Potential",
+          "description": "Instantly see a clear, comprehensive overview of your insurance needs. Explore various options and scenarios, empowering you to visualize a secure future."
+        },
+        {
+          "number": "3",
+          "title": "Secure Your Legacy",
+          "description": "Download a personalized report that encapsulates your tailored recommendations. This valuable document helps you take confident next steps towards lasting peace of mind."
+        },
+        {
+          "number": "4",
+          "title": "Expert Guidance (Optional)",
+          "description": "Should you desire, seamlessly connect with trusted advisors who can further illuminate your path and help implement your personalized insurance strategy."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Voices of Confidence",
+      "items": [
+        {
+          "text": "\"InsureCalc made understanding my family's future so much clearer. The process was surprisingly enjoyable, and I feel truly prepared. A weight has been lifted.\"",
+          "author": "Sarah L.",
+          "role": "Marketing Executive"
+        },
+        {
+          "text": "\"As a small business owner, planning for the unexpected is crucial. InsureCalc offered insights I hadn't considered, all presented with such clarity and elegance.\"",
+          "author": "David R.",
+          "role": "Entrepreneur"
+        },
+        {
+          "text": "\"I used to find insurance daunting, but InsureCalc's approach felt so empowering. It's more than a tool; it's a partner in securing my peace of mind.\"",
+          "author": "Maria G.",
+          "role": "Healthcare Professional"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions & Reflections",
+      "items": [
+        {
+          "question": "How deeply can I trust the accuracy of my calculation?",
+          "answer": "Our calculation model is built upon rigorously tested, industry-leading actuarial science and constantly updated data, ensuring an exceptionally precise reflection of your insurance landscape. We aim to offer you not just an estimate, but a foundation for confident decision-making."
+        },
+        {
+          "question": "Is it possible to explore different life scenarios and save them?",
+          "answer": "Absolutely. We encourage you to create a personalized account where you can effortlessly save and revisit multiple calculation scenarios. This feature is designed to empower you to compare various life stages and financial pathways, making truly informed choices at your own pace."
+        },
+        {
+          "question": "How is my personal and sensitive information protected?",
+          "answer": "Your privacy and security are paramount. We employ state-of-the-art encryption technologies and adhere to stringent data protection protocols. All your personal data is handled with the utmost confidentiality and is never shared with third parties without your explicit consent. Your peace of mind extends to your data's safety with us."
+        }
+      ]
+    },
+    "footer": {
+      "links": ["Privacy Policy", "Terms of Service", "Contact Us"],
+      "copyright": "© 2024 InsureCalc. All rights reserved. Crafting peace of mind, elegantly."
+    }
+  }
+}

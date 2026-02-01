@@ -1,0 +1,115 @@
+/* HealthInsurancePolicies.css */
+.health-insurance-policies {
+  direction: rtl;
+  text-align: right;
+}
+
+.health-insurance-policies .card {
+  transition: transform 0.2s;
+}
+
+.health-insurance-policies .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.policy-detail-view {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #007bff, transparent);
+  margin: 30px 0;
+}
+
+.coverage-summary {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+}
+
+.coverage-item {
+  padding: 15px;
+  background: white;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.coverage-item:hover {
+  background: #f8f9fa;
+  transform: scale(1.05);
+}
+
+.disclaimer-box {
+  background: #fff8e1;
+  border-left: 4px solid #ffc107;
+}
+
+.premium-details {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.issuer-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.stat-card {
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.certificate-preview {
+  background: white;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+/* تصميم responsive */
+@media (max-width: 768px) {
+  .health-insurance-policies .card {
+    margin-bottom: 15px;
+  }
+  
+  .info-item {
+    padding: 8px 0;
+  }
+  
+  .section-divider {
+    margin: 20px 0;
+  }
+}
+
+.row{
+  display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.row .mb-4{
+  width: 50% !important;
+}

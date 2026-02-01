@@ -1,0 +1,383 @@
+{
+  "vehicleForm": {
+    "title": "إضافة مركبة جديدة",
+    "sections": {
+      "basic": "المعلومات الأساسية",
+      "identification": "بيانات التعريف",
+      "technical": "المواصفات الفنية"
+    },
+    "fields": {
+      "vehicleType": "نوع المركبة",
+      "make": "الشركة المصنعة",
+      "model": "الموديل",
+      "year": "سنة الصنع",
+      "licensePlate": "رقم اللوحة",
+      "vin": "رقم الهيكل (VIN)",
+      "fuelType": "نوع الوقود",
+      "engineSize": "سعة المحرك (لتر)",
+      "currentValue": "القيمة الحالية ($)",
+      "annualMileage": "المسافة السنوية (كم)",
+      "commercial": "هذه مركبة تجارية"
+    },
+    "placeholders": {
+      "make": "مثال: تويوتا",
+      "model": "مثال: كامري",
+      "licensePlate": "مثال: أبج-123",
+      "vin": "17 رقم تعريف المركبة",
+      "engineSize": "مثال: 1.6",
+      "currentValue": "مثال: 10000",
+      "annualMileage": "مثال: 10000"
+    },
+    "buttons": {
+      "cancel": "إلغاء",
+      "submit": "إضافة المركبة",
+      "submitting": "جاري الإضافة..."
+    },
+    "options": {
+      "vehicleType": {
+        "car": "سيارة",
+        "suv": "دفع رباعي",
+        "truck": "شاحنة",
+        "motorcycle": "دراجة نارية"
+      },
+      "fuelType": {
+        "petrol": "بنزين",
+        "diesel": "ديزل",
+        "electric": "كهربائي",
+        "hybrid": "هجين"
+      }
+    },
+    "errors": {
+      "general": "فشل إضافة المركبة. يرجى المحاولة مرة أخرى.",
+      "makeRequired": "اسم الشركة المصنعة مطلوب",
+      "modelRequired": "الموديل مطلوب",
+      "yearInvalid": "يرجى إدخال سنة صحيحة",
+      "licensePlateRequired": "رقم اللوحة مطلوب",
+      "vinInvalid": "رقم الهيكل يجب أن يكون 10 أحرف على الأقل",
+      "valueInvalid": "يرجى إدخال قيمة صحيحة"
+    }
+  },
+  
+  "carInsuranceReport": {
+    "title": "تقرير التأمين الشامل",
+    "description": "احصل على تحليل كامل لتأمين سيارتك مع توصيات مخصصة",
+    "features": {
+      "riskAnalysis": "تحليل المخاطر",
+      "riskDescription": "تقييم مستوى الخطر بناءً على بيانات سيارتك",
+      "smartRecommendations": "توصيات ذكية",
+      "recommendationsDescription": "نصائح مخصصة لتخفيض أقساط التأمين",
+      "comprehensiveComparison": "مقارنة شاملة",
+      "comparisonDescription": "مقارنة بين جميع خطط التأمين المتاحة"
+    },
+    "button": {
+      "generate": "إنشاء تقرير PDF",
+      "generating": "جاري إنشاء التقرير..."
+    },
+    "content": {
+      "title": "محتوى التقرير:",
+      "items": [
+        "معلومات السيارة الأساسية",
+        "تحليل المخاطر والتقييم",
+        "مقارنة خطط التأمين",
+        "توصيات لتخفيض الأقساط",
+        "نصائح السلامة المرورية",
+        "تحليل تاريخ المطالبات"
+      ]
+    },
+    "errors": {
+      "noVehicle": "الرجاء اختيار مركبة",
+      "generationFailed": "فشل في إنشاء التقرير. يرجى المحاولة مرة أخرى"
+    }
+  },
+  
+  "confirmEmail": {
+    "title": "تأكيد البريد الإلكتروني",
+    "verifying": "جاري التحقق...",
+    "missingParams": "معلمات التحقق مفقودة.",
+    "success": "تم تأكيد البريد الإلكتروني بنجاح.",
+    "failed": "فشل التحقق.",
+    "return": "يمكنك الآن العودة إلى الموقع وتسجيل الدخول."
+  },
+  
+  "dashboard": {
+    "title": "لوحة تحكم SafeRatio",
+    "welcome": "مرحباً، {{username}}!",
+    "logout": "تسجيل الخروج",
+    "portalTitle": "بوابة إدارة التأمين",
+    "portalDescription": "إدارة جميع وثائق التأمين الخاصة بك في مكان واحد",
+    "cards": {
+      "carInsurance": "تأمين السيارات",
+      "carInsuranceDesc": "إدارة وثائق تأمين مركباتك",
+      "healthInsurance": "التأمين الصحي",
+      "healthInsuranceDesc": "إدارة التأمين الصحي للمنشآت",
+      "insuranceQuotes": "عروض التأمين",
+      "insuranceQuotesDesc": "عرض وإدارة عروض التأمين الخاصة بك",
+      "claims": "المطالبات",
+      "claimsDesc": "تتبع وإدارة مطالبات التأمين"
+    },
+    "buttons": {
+      "manage": "إدارة",
+      "comingSoon": "قريباً"
+    },
+    "stats": {
+      "activePolicies": "الوثائق النشطة",
+      "pendingQuotes": "العروض المعلقة",
+      "openClaims": "المطالبات المفتوحة",
+      "noPolicies": "لا توجد وثائق نشطة",
+      "noQuotes": "لا توجد عروض معلقة",
+      "noClaims": "لا توجد مطالبات مفتوحة"
+    }
+  },
+  
+  "forgotPassword": {
+    "title": "نسيت كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "sendButton": "إرسال بريد إعادة التعيين",
+    "sent": "إذا كان الحساب موجوداً، تم إرسال بريد إعادة تعيين كلمة المرور.",
+    "error": "فشل إرسال بريد إعادة التعيين."
+  },
+  
+  "healthInsurance": {
+    "title": "التأمين الصحي للمنشآت",
+    "welcome": "مرحباً، {{username}}!",
+    "accountBadge": "حساب منشأة",
+    "tabs": {
+      "companies": "شركاتي ({{count}})",
+      "quotes": "اقتباسات التأمين ({{count}})",
+      "policies": "الوثائق ({{count}})",
+      "insuranceTypes": "أنواع التأمين",
+      "calculator": "حاسبة الأقساط"
+    },
+    "companies": {
+      "title": "شركاتي ({{count}})",
+      "addButton": "+ إضافة شركة جديدة",
+      "stats": {
+        "title": "📊 إحصائيات الشركات",
+        "registered": "لديك {{count}} شركة مسجلة",
+        "totalEmployees": "{{count}} 👥 إجمالي الموظفين"
+      },
+      "emptyState": {
+        "icon": "🏢",
+        "title": "لا توجد شركات مسجلة",
+        "description": "أضف شركتك الأولى للبدء في تأمين موظفيك والحصول على عروض مخصصة",
+        "button": "+ إضافة شركتك الأولى"
+      },
+      "companyCard": {
+        "tags": {
+          "location": "📍 {{city}}",
+          "sector": "🏷️ {{sector}}"
+        },
+        "details": {
+          "crNumber": "رقم السجل",
+          "crNumberPlaceholder": "غير محدد",
+          "age": "عمر الشركة",
+          "ageUnit": "سنة",
+          "email": "البريد الإلكتروني",
+          "emailPlaceholder": "غير محدد",
+          "phone": "رقم الهاتف",
+          "phonePlaceholder": "غير محدد"
+        },
+        "createdAt": "🗓️ تم الإنشاء في {{date}}",
+        "actions": {
+          "calculate": "🧮 احتساب قسط",
+          "details": "📋 عرض التفاصيل",
+          "delete": "🗑️ حذف"
+        }
+      },
+      "summary": {
+        "title": "📈 ملخص الشركات",
+        "totalCompanies": "إجمالي الشركات",
+        "totalEmployees": "إجمالي الموظفين",
+        "sectorsDistribution": "توزيع القطاعات",
+        "more": "+ {{count}} أكثر"
+      }
+    },
+    "calculator": {
+      "title": "🧮 حاسبة أقساط التأمين",
+      "modeSwitcher": {
+        "simple": "📊 الحاسبة البسيطة",
+        "advanced": "🚀 الحاسبة المتقدمة"
+      },
+      "emptyState": {
+        "icon": "🏢",
+        "title": "اختر شركة للبدء",
+        "description": "لديك {{count}} شركة. اختر واحدة لاحتساب القسط",
+        "selectPlaceholder": "-- اختر شركة --",
+        "addButton": "+ إضافة شركة جديدة"
+      },
+      "selectedCompany": {
+        "changeButton": "تغيير الشركة",
+        "refreshEmployees": "🔄 تحميل بيانات الموظفين",
+        "refreshLoading": "جاري التحميل...",
+        "dataStatus": {
+          "title": "📊 حالة البيانات",
+          "company": "الشركة:",
+          "id": "الـ ID:",
+          "loadedEmployees": "الموظفون المحملون:",
+          "source": "المصدر:",
+          "notLoaded": "لم يتم التحميل",
+          "sourceLocal": "التخزين المحلي",
+          "sourceFile": "ملف مرفوع",
+          "sourceDefault": "بيانات افتراضية",
+          "calculatedData": "المعتمد للحساب:",
+          "realData": "بيانات حقيقية",
+          "clearCache": "🗑️ مسح البيانات المحلية"
+        },
+        "employeesStats": {
+          "title": "📈 إحصائيات الموظفين المحملين",
+          "total": "العدد الكلي",
+          "males": "الذكور",
+          "females": "الإناث",
+          "married": "المتزوجون",
+          "totalSalaries": "إجمالي الرواتب",
+          "averageSalary": "متوسط الراتب",
+          "sourceBadge": {
+            "excel": "💾 مصدر البيانات: ملف Excel المرفوع ({{count}} سجل)",
+            "default": "⚠️ مصدر البيانات: بيانات افتراضية (للاستمرار في التطوير)"
+          }
+        },
+        "sampleData": {
+          "title": "📋 عينة من بيانات الموظفين ({{count}} موظف):",
+          "headers": ["#", "الاسم", "الجنس", "العمر", "الراتب", "الحالة"],
+          "more": "+ {{count}} موظف إضافي"
+        }
+      }
+    },
+    "errors": {
+      "sessionExpired": "انتهت الجلسة. يرجى تسجيل الدخول مرة أخرى.",
+      "loadFailed": "فشل تحميل البيانات. يرجى المحاولة مرة أخرى.",
+      "noCompanies": "⚠️ لا توجد شركات للمستخدم!",
+      "policyLoadFailed": "❌ فشل تحميل تفاصيل الوثيقة",
+      "guideDownloadFailed": "❌ فشل تحميل الدليل. يرجى المحاولة مرة أخرى.",
+      "certificateFailed": "❌ لا يمكن إنشاء الشهادة. يرجى المحاولة مرة أخرى.",
+      "quoteAcceptFailed": "❌ فشل قبول الاقتباس",
+      "deleteFailed": "فشل حذف الشركة",
+      "noPermission": "❌ ليس لديك صلاحية لحذف هذه الشركة",
+      "notFound": "❌ الشركة غير موجودة",
+      "cannotDelete": "❌ لا يمكن حذف الشركة",
+      "serverError": "❌ لا يمكن الاتصال بالخادم",
+      "noCompanySelected": "❌ لم يتم اختيار شركة",
+      "noCompanyId": "❌ لم يتم العثور على معرف الشركة",
+      "noEmployeeData": "❌ لا توجد بيانات موظفين متاحة"
+    },
+    "success": {
+      "policyCreated": "✅ تم إنشاء وثيقة جديدة: {{policyNumber}}",
+      "companyDeleted": "✅ تم حذف الشركة \"{{companyName}}\" بنجاح",
+      "companyHidden": "⚠️ تم إخفاء الشركة \"{{companyName}}\" من القائمة (لم تحذف من قاعدة البيانات)",
+      "employeeDataLoaded": "✅ تم تحميل بيانات الموظفين للشركة {{companyName}}",
+      "localDataLoaded": "✅ تم تحميل {{count}} موظف من التخزين المحلي",
+      "cacheCleared": "🗑️ تم مسح البيانات المحلية",
+      "employeeDataSaved": "✅ تم حفظ بيانات الموظفين بنجاح!",
+      "quoteAccepted": "✅ تم قبول الاقتباس بنجاح!",
+      "insuranceTypeSelected": "✅ تم اختيار نوع التأمين {{typeId}}"
+    }
+  },
+  
+  "healthInsuranceDashboard": {
+    "title": "🏢 نظام التأمين الصحي للشركات",
+    "description": "إدارة تأمين الموظفين وتحليل البيانات الصحية",
+    "uploadSection": {
+      "title": "📤 رفع بيانات الموظفين",
+      "description": "ارفع ملف Excel يحتوي على بيانات موظفيك",
+      "chooseFile": "اختر ملف Excel",
+      "uploading": "جاري الرفع...",
+      "downloadTemplate": "تحميل النموذج",
+      "notes": {
+        "title": "ملاحظات هامة:",
+        "items": [
+          "يجب أن يحتوي الملف على الأعمدة التالية: employee_id, full_name, age, gender, department, salary",
+          "يمكنك إضافة أعمدة اختيارية: email, phone, marital_status, dependents, medical_history",
+          "الحد الأقصى لحجم الملف: 10MB"
+        ]
+      }
+    },
+    "reportsSection": {
+      "title": "📋 التقارير والتحليلات",
+      "excelReport": {
+        "title": "تقرير Excel شامل",
+        "description": "تقرير مفصل بجميع بيانات الموظفين والتحليلات",
+        "button": "تحميل Excel"
+      },
+      "pdfReport": {
+        "title": "تقرير PDF مختصر",
+        "description": "ملخص التحليلات والتوصيات بتنسيق PDF",
+        "button": "تحميل PDF"
+      },
+      "riskAnalysis": {
+        "title": "تحليل المخاطر",
+        "description": "تقييم المخاطر الصحية للشركة باستخدام الذكاء الاصطناعي",
+        "button": "عرض التحليل"
+      }
+    },
+    "uploadStatus": {
+      "success": "✅ تم الرفع بنجاح",
+      "analysis": "ملخص التحليل:",
+      "recommendations": "التوصيات:"
+    },
+    "errors": {
+      "invalidFile": "الرجاء رفع ملف Excel بصيغة .xlsx أو .xls",
+      "uploadFailed": "فشل في رفع الملف",
+      "reportFailed": "فشل في إنشاء التقرير",
+      "noCompany": "الرجاء اختيار شركة"
+    }
+  },
+  "landingPage": {
+    "hero": {
+      "title": "استقبل الغد بثقة",
+      "subtitle": "اكتشف راحة البال التي تأتي مع الحماية المخصصة. تساعدك أداتنا البديهية على فهم احتياجاتك، حتى تتمكن من العيش بشكل كامل، اليوم وغداً",
+      "cta": "ابدأ رحلتك نحو الوضوح"
+    },
+    "registrationTypes": {
+      "title": "اختر نوع حسابك",
+      "subtitle": "ابدأ مع حل التأمين المناسب لاحتياجاتك",
+      "individual": {
+        "title": "حساب فردي",
+        "description": "مثالي للاحتياجات التأمينية الشخصية",
+        "features": "تأمين السيارات والمركبات",
+        "button": "سجل كفرد"
+      },
+      "organization": {
+        "title": "حساب مؤسسة",
+        "description": "مثالي للشركات والمؤسسات",
+        "features": "خطط التأمين الصحي للموظفين",
+        "button": "سجل كمؤسسة"
+      }
+    },
+    "features": {
+      "title": "أساس لمستقبلك",
+      "precision": {
+        "title": "دقة يمكنك الوثوق بها",
+        "description": "تأخذ خوارزمياتنا المتقدمة في الاعتبار كل تفاصيل حياتك، وتقدم تقديراً يعكس ظروفك الفريدة حقاً. لا مزيد من التخمين، فقط رؤى واضحة وقابلة للتنفيذ لرفاهيتك المالية."
+      },
+      "scenario": {
+        "title": "صمم سيناريو مثالي",
+        "description": "الحياة ديناميكية، ويجب أن تكون خططك كذلك. احفظ وقارن خيارات التغطية المختلفة، وتكيف مع تطور أحلامك ومسؤولياتك. تمكينك لاتخاذ خيارات تتناغم مع تطلعاتك."
+      },
+      "blueprint": {
+        "title": "مخططك الشخصي",
+        "description": "احصل على تقرير شامل مصمم بشكل جميل يوضح احتياجاتك التأمينية. هذا المخطط الشخصي خاص بك للاحتفاظ به ومشاركته ومراجعته، مما يضمن أنك دائماً على اطلاع وواثق في قراراتك."
+      }
+    },
+    "process": {
+      "title": "رحلتك، مبسطة",
+      "steps": [
+        {
+          "title": "شارك قصتك",
+          "description": "ابدأ بتقديم بعض التفاصيل بشكل آمن حول حياتك وأهدافك المالية. تم تصميم منصتنا لفهم تطلعاتك الفريدة، مما يجعل الحساب شخصياً حقاً."
+        },
+        {
+          "title": "اكتشف إمكانياتك",
+          "description": "شاهد فوراً نظرة عامة واضحة وشاملة لاحتياجاتك التأمينية. استكشف الخيارات والسيناريوهات المختلفة، وتمكينك من تصور مستقبل آمن."
+        },
+        {
+          "title": "أمن ميراثك",
+          "description": "قم بتنزيل تقرير مخصص يلخص توصياتك المصممة خصيصاً. تساعدك هذه الوثيقة القيمة على اتخاذ الخطوات التالية بثقة نحو راحة البال الدائمة."
+        },
+        {
+          "title": "إرشادات الخبراء (اختياري)",
+          "description": "إذا رغبت، اتصل بسلاسة مع المستشارين الموثوق بهم الذين يمكنهم إلقاء المزيد من الضوء على طريقك ومساعدتك في تنفيذ استراتيجية التأمين الشخصية الخاصة بك."
+        }
+      ]
+    }
+  }
+}

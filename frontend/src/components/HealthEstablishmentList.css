@@ -1,0 +1,66 @@
+/* src/components/health/HealthEstablishmentList.css */
+.health-establishment-list {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(78, 115, 223, 0.05);
+  cursor: pointer;
+}
+
+.btn-outline-primary,
+.btn-outline-success,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-danger {
+  border-width: 1px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4e73df;
+  color: white;
+}
+
+.btn-outline-success:hover {
+  background-color: #1cc88a;
+  color: white;
+}
+
+.btn-outline-info:hover {
+  background-color: #36b9cc;
+  color: white;
+}
+
+.btn-outline-warning:hover {
+  background-color: #f6c23e;
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e74a3b;
+  color: white;
+}
+
+/* تحسينات للجوال */
+@media (max-width: 768px) {
+  .health-establishment-list {
+    padding: 1rem;
+  }
+  
+  .table-responsive {
+    font-size: 0.85rem;
+  }
+  
+  .btn {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+    .form-section {
+        padding: 1.25rem;
+    }
+}
