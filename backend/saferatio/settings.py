@@ -107,20 +107,12 @@ WSGI_APPLICATION = 'saferatio.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default':
-        dj_database_url.config(
-        default=os.environ.get("DATABASE_URL")
-        ),
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'saferatio',
-        # 'USER': 'postgres',
-        # 'PASSWORD': 'roaa',
-        # 'HOST': 'localhost',
-        # 'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL', 'sqlite:///' + str(BASE_DIR / 'db.sqlite3')),
+        conn_max_age=600,
+        engine='django.db.backends.postgresql',
+    )
+}
 
 
 # Password validation
