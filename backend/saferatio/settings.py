@@ -108,7 +108,7 @@ WSGI_APPLICATION = 'saferatio.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL', 'sqlite:///' + str(BASE_DIR / 'db.sqlite3')),
+        default='postgresql://postgres:roaa@localhost:5432/saferatio',
         conn_max_age=600,
         engine='django.db.backends.postgresql',
     )
